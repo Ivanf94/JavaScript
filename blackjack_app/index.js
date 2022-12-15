@@ -1,5 +1,5 @@
 function randomNumber(){
-
+    
     let random = Math.floor(Math.random() * 13) + 1;
     if(random === 1){
         return 11;
@@ -15,7 +15,10 @@ function randomNumber(){
 
 player = {
     name: "Ivan",
-    chips: 1440
+    chips: 1440,
+    predstava: function(){
+        return "My name is Ivan";
+    }
 }
 
 let playerEl = document.getElementById("player-el");
